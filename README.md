@@ -1,4 +1,7 @@
-Guess the Code
+
+# guessthecode
+
+
 Welcome to "Guess the Code," an interactive web-based game that challenges your logical thinking and pattern recognition skills. This project combines the power of Node.js, Express.js, React, and Tailwind CSS to deliver a delightful gaming experience.
 
 About the Game
@@ -15,6 +18,13 @@ User Authentication: Users can create accounts, log in, and track their game sta
 
 Leaderboard: Compete with other players and see where you stand on the global leaderboard.
 
+
+
+
+## Contributing
+
+Contributions are always welcome!
+
 Getting Started
 Clone this repository to your local machine.
 Navigate to the client directory and run npm install to install the frontend dependencies.
@@ -22,8 +32,7 @@ Navigate to the server directory and run npm install to install the backend depe
 Create a MySQL database and configure the connection settings in the backend.
 Start the frontend and backend servers using npm start in their respective directories.
 Access the application in your web browser at http://localhost:3000.
-Contributing
-Contributions are welcome! Whether you want to report a bug, suggest an enhancement, or contribute code, please feel free to open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Authors
+
+- [@bogdantomic1](https://www.github.com/bogdantomic1)
