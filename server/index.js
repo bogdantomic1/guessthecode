@@ -14,9 +14,10 @@ const db = require("./models");
 
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "",
+  user: "murdock", // Change to 'murdock'
+  password: "password1234", // Password for the 'murdock' user
   database: "guessthecodedb",
+  port: 3310,
 });
 
 //Routes

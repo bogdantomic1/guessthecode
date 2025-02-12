@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 const Leaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
   const [orderBy, setOrderBy] = useState("score");
@@ -81,11 +81,18 @@ const Leaderboard = () => {
           </thead>
           <tbody>
             {leaderboardData.map((item, index) => (
-              <tr key={index} className="hover:bg-blue-800 hover:rounded-md transition duration-200">
+              <tr
+                key={index}
+                className="hover:bg-blue-800 hover:rounded-md transition duration-200"
+              >
                 <td className="text-white py-2 text-center">{item.username}</td>
                 <td className="text-white py-2 text-center">{item.score}</td>
-                <td className="text-white py-2 text-center">{item.average_score}</td>
-                <td className="text-white py-2 text-center">{item.number_of_games}</td>
+                <td className="text-white py-2 text-center">
+                  {item.average_score}
+                </td>
+                <td className="text-white py-2 text-center">
+                  {item.number_of_games}
+                </td>
               </tr>
             ))}
           </tbody>

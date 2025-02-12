@@ -1,7 +1,7 @@
 import React from "react";
-import Overlay from "./Overlay";
+import Overlay from "../components/Overlay";
 import { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 
@@ -131,7 +131,12 @@ const Game = () => {
           console.error("Error updating score:", error);
         });
       setTimeout(() => {
-        showOverlay("Congrats! You scored " + scoringSystem.get(numberOfGuess));
+        showOverlay(
+          "Congrats! You scored " +
+            scoringSystem.get(numberOfGuess) +
+            " Correct array was: " +
+            niz
+        );
       }, 500);
     }
 
@@ -151,7 +156,7 @@ const Game = () => {
           console.error("Error updating score:", error);
         });
       setTimeout(() => {
-        showOverlay("GAME OVER!");
+        showOverlay("GAME OVER! Correct array was: " + niz);
         //window.location.reload();
       }, 500);
     }

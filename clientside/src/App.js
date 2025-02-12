@@ -1,8 +1,8 @@
 import "./App.css";
-import axios from "axios";
-import { useEffect, useState } from "react";
+//import axios from "axios";
+//import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Navbar from "./pages/Navbar";
+//import Navbar from "./components/Navbar";
 import Profile from "./pages/Profile";
 import Leaderboard from "./pages/Leaderboard";
 import Home from "./pages/Home";
